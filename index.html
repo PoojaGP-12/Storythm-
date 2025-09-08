@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Storythm</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <meta name="description" content="Storythm - Discover and buy handpicked novels. Every page begins a new adventure.">
+  <meta name="keywords" content="books, novels, buy books, online bookstore, reading, adventure, Storythm">
+</head>
+<body>
+  <header>
+    <h1>STORYTHM</h1>
+    <nav>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">&#9776;</label>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#aboutus">About Us</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-wave">
+      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill="#ffd600" fill-opacity="1" d="M0,64L48,74.7C96,85,192,107,288,117.3C384,128,480,128,576,117.3C672,107,768,85,864,74.7C960,64,1056,64,1152,69.3C1248,75,1344,85,1392,90.7L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+      </svg>
+    </div>
+  </header>
+
+  <main>
+    <!-- Split Hero Section -->
+    <section class="hero-split page-section">
+      <div class="hero-left">
+        <h2>Every Page, A New Adventure</h2>
+        <p>Handpicked novels, curated for every kind of reader. Dive in and discover your next favorite book!</p>
+        <form class="hero-newsletter" id="newsletter-form">
+          <input type="email" placeholder="Get updates & offers" required>
+          <button type="submit">Subscribe</button>
+        </form>
+        <div id="newsletter-success" style="display:none;color:#ffd600;font-weight:bold;margin-top:1em;">
+          Thank you for subscribing!
+        </div>
+      </div>
+      <div class="hero-right">
+        <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80" alt="Books" />
+      </div>
+    </section>
+
+    <!-- Fast Selling Section -->
+    <section class="fast-selling page-section">
+      <h2>🏆 Fast Selling & NYT Bestsellers</h2>
+      <div class="fast-selling-list">
+        <article class="fast-card">
+          <img src="https://static01.nyt.com/bestsellers/images/9780593158715.jpg" alt="ATMOSPHERE">
+          <h3>ATMOSPHERE</h3>
+          <p>Atmosphere is a gripping science fiction novel that explores humanity's survival in a dystopian future. Perfect for fans of thrilling, thought-provoking narratives.</p>
+          <button>Add to Cart</button>
+        </article>
+        <article class="fast-card">
+          <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRWmN28c8FlBDZ1nF5KdPP6wgG-PfAKdBl5jygE34Ae0hDhB54OLzFRqPDY5TDMCZDvf7qW8s8adzAYxi2wxEjWUHLnp-2ncQp3G-WAbjV12Ol-xixcGRMq" alt="Where the Crawdads Sing">
+          <h3>Harry Potter and the Sorcerer’s Stone</h3>
+          <p>Join Harry as he discovers his true heritage and battles dark forces in J.K. Rowling's beloved fantasy novel. A must-read for all ages!</p>
+          <button>Add to Cart</button>
+        </article>
+        <article class="fast-card">
+          <img src="https://m.media-amazon.com/images/I/7170CBgqI2L._SL1500_.jpg" alt="Quicksilver">
+          <h3>Quicksilver</h3>
+          <p>Quicksilver is a historical science fiction novel by Neal Stephenson that blends science, politics, and intrigue in the 17th and 18th centuries. Ideal for readers who enjoy intellectually rich, time-spanning epics.</p>
+          <button>Add to Cart</button>
+        </article>
+        <article class="fast-card">
+          <img src="https://m.media-amazon.com/images/I/81aPAbk3FmL._SL1500_.jpg" alt="The Color of Death">
+          <h3>The Color of Death</h3>
+          <p>The Color of Death is a thrilling fantasy novel that weaves together themes of love, danger, and faeries. Perfect for readers who enjoy immersive and enchanting tales.</p>
+          <button>Add to Cart</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- Trending Novels Section -->
+    <section class="trending-novels page-section">
+      <h2>🔥 Trending Novels</h2>
+      <div class="trending-list">
+        <article class="trending-card">
+          <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRc0zVb_aF0AcOTpzkRGWdf5TnfSAeAfxlff2lJcyll2qlAyJ3zAJCbStcyW4btPJkQHU_sk8q_TMjWkKd3rMaHp1djuesDe63rHlbfydVzDdgxHz_uLTy_hQ" alt="The Midnight Library">
+          <h3>The Midnight Library</h3>
+          <p>Between life and death there is a library. Discover infinite possibilities.</p>
+          <button>Add to Cart</button>
+        </article>
+        <article class="trending-card">
+          <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSs5ZijGmmxkCnFraM4R0cTApNG2gxEQZ1X1XQNzuELufztTOHTaJFfGZbRN88AZI0O9I0Yzqkn1GxSy5ZYe3wIWWi2vxx0ilYVzf5-p8eEaCpH3wjc9037" alt="Where the Crawdads Sing">
+          <h3>Where the Crawdads Sing</h3>
+          <p>A coming-of-age mystery set in the marshes of North Carolina.</p>
+          <button>Add to Cart</button>
+        </article>
+        <article class="trending-card">
+          <img src="https://m.media-amazon.com/images/I/81LscKUplaL._UF1000,1000_QL80_.jpg" alt="The Seven Husbands of Evelyn Hugo">
+          <h3>The Seven Husbands of Evelyn Hugo</h3>
+          <p>Hollywood legend Evelyn Hugo shares her glamorous and scandalous life story.</p>
+          <button>Add to Cart</button>
+        </article>
+        <article class="trending-card">
+          <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTSzQrUTzb1DK9DBTGcGUBY0_0q6v_zNGt9Vuh0kPuEd4hDU39S_qDj0tIXH_GmWnobP0Ggh2K5d5czTpqLZUrCKbNkfGpqFHrBxV6XuTrdLgnxYrAW4LTb" alt="A Court of Thorns and Roses">
+          <h3>A Court of Thorns and Roses</h3>
+          <p>A thrilling fantasy of love, danger, and faeries.</p>
+          <button>Add to Cart</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- All Other Novels Section -->
+    <section class="products-staggered page-section">
+      <h2 style="text-align:center;color:#ffd600;margin-bottom:2rem;">📚 Explore More Novels</h2>
+      <div class="product-row">
+        <article class="product-card">
+          <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR8Sv5n-EGTkXnhArULqDMA5O-vy8NKOB_mUG3CrAq7rOwPGrR_lpeOX2x0QlCDkI6_jK6IxrduUFC1PT_E4oh8rP_BliVzPAYZi5zKCZjw" alt="The Silent Patient">
+          <div>
+            <h3>The Silent Patient</h3>
+            <p>A silent artist, a murdered husband, and a therapist chasing the truth.</p>
+            <button>Add to Cart</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSq-slKS2XbvHbPQX-gDZPZGgFuabiEnmIQSS8bA0ROZ6nWIKJ0NuBXVn1l4p5daLphrt0GUuS2UG6QDDfbkGinVQE9en62tYRg4m14z08BOjr2BOkkgIHlyg" alt="Verity">
+          <div>
+            <h3>Verity</h3>
+            <p>A struggling writer is given the chance of a lifetime, but at what cost?</p>
+            <button>Add to Cart</button>
+          </div>
+        </article>
+      </div>
+      <div class="product-row">
+        <article class="product-card">
+          <img src="https://m.media-amazon.com/images/I/819I+YyuU-L._SL1500_.jpg" alt="Don't Believe Everything You Think">
+          <div>
+            <h3>Don't Believe Everything You Think</h3>
+            <p>Join the journey of self-discovery and challenge your perceptions.</p>
+            <button>Add to Cart</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://m.media-amazon.com/images/I/61uYYec8joL._AC_UY327_FMwebp_QL65_.jpg" alt="The Great Gatsby">
+          <div>
+            <h3>The Great Gatsby</h3>
+            <p>A classic tale of love, wealth, and the American Dream in the Roaring Twenties.</p>
+            <button>Add to Cart</button>
+          </div>
+        </article>
+      </div>
+      <div class="product-row">
+        <article class="product-card">
+          <img src="https://m.media-amazon.com/images/I/712cDO7d73L._AC_UY327_FMwebp_QL65_.jpg" alt="The Hobbit">
+          <div>
+            <h3>The Hobbit</h3>
+            <p>Bilbo Baggins embarks on a journey filled with adventure, dragons, and treasure.</p>
+            <button>Add to Cart</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://m.media-amazon.com/images/I/81TRBjfC5fL._AC_UY327_FMwebp_QL65_.jpg" alt="The Catcher in the Rye">
+          <div>
+            <h3>The Catcher in the Rye</h3>
+            <p>Holden Caulfield’s story of teenage angst and alienation in New York City.</p>
+            <button>Add to Cart</button>
+          </div>
+        </article>
+      </div>
+      <div class="product-row">
+        <article class="product-card">
+          <img src="https://m.media-amazon.com/images/I/71+2-t7M35L._AC_UY327_FMwebp_QL65_.jpg" alt="The Alchemist">
+          <div>
+            <h3>The Alchemist</h3>
+            <p>A shepherd’s journey to find his personal legend and fulfill his dreams.</p>
+            <button>Add to Cart</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/81wgcld4wxL.jpg" alt="Atomic Habits">
+          <div>
+            <h3>Atomic Habits</h3>
+            <p>James Clear reveals how tiny changes can lead to remarkable results.</p>
+            <button>Add to Cart</button>
+          </div>
+        </article>
+      </div>
+      <div class="product-row">
+        <article class="product-card">
+          <img src="https://images-na.ssl-images-amazon.com/images/I/91SZSW8qSsL.jpg" alt="It">
+          <div>
+            <h3>It</h3>
+            <p>Stephen King's terrifying tale of childhood, friendship, and evil in Derry.</p>
+            <button>Add to Cart</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQVWasla6w8nOT36YMbniln9jSFglgVET3h8i7Sj3GvBCAaRi6-WN64fAhC_UaHeorbtW9koTHZOaWfvMNMMpH0r4JHoAQyIiTR4qxNpwkOWImIR2S7BFzaFg" alt="To Kill a Mockingbird">
+          <div>
+            <h3>To Kill a Mockingbird</h3>
+            <p>A powerful exploration of racial injustice and moral growth in the Deep South.</p>
+            <button>Add to Cart</button>
+          </div>
+        </article>
+      </div>
+      <div class="product-row">
+        <article class="product-card">
+          <img src="https://m.media-amazon.com/images/I/914cHl9v7oL._AC_UY327_FMwebp_QL65_.jpg" alt="The Book Thief">
+          <div>
+            <h3>The Book Thief</h3>
+            <p>A young girl finds solace in books during WWII in Nazi Germany.</p>
+            <button>Add to Cart</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRUeXutG6qvf0zE80QMnYgCvPh2u1drI95BhWSv1nc2exN0C1yjUm6oZ8lGPLABq4W-Iq-NNed1lBV8pyrggDG-v3ooMxuRZzuos5TeBDms6A2963D2qPtFeg" alt="Pride and Prejudice">
+          <div>
+            <h3>Pride and Prejudice</h3>
+            <p>Experience the timeless romance and social commentary of Jane Austen's masterpiece.</p>
+            <button>Add to Cart</button>
+          </div>
+        </article>
+      </div>
+      <div class="product-row">
+        <article class="product-card">
+          <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQn51_hHlI3u8Q4JkYeAHCUl1iVqTFJx71ErMeH3-_a_J5XIBpqktky3UMbFplkIXi9YG3PfzTlMRuGvwB29fWv5wqOVSKb4eyijuT9bTTtr20ybeOKqlks" alt="1984">
+          <div>
+            <h3>1984</h3>
+            <p>George Orwell's dystopian novel that explores the dangers of totalitarianism and the loss of individuality.</p>
+            <button>Add to Cart</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <img src="https://m.media-amazon.com/images/I/81BE7eeKzAL._AC_UY327_FMwebp_QL65_.jpg" alt="Rich Dad Poor Dad">
+          <div>
+            <h3>Rich Dad Poor Dad</h3>
+            <p>Learn the principles of financial literacy and wealth building from Robert Kiyosaki.</p>
+            <button>Add to Cart</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Collections & Categories Section -->
+    <section id="collections" class="page-section" style="display:none;">
+      <h2 style="color:#ffd600;">Collections</h2>
+      <p style="max-width:700px;margin:1rem auto;color:#444;">
+        Explore our curated categories and discover your next favorite read!
+      </p>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:2rem;margin-top:2rem;">
+        <div style="background:#fffde7;border-radius:16px;box-shadow:0 2px 8px rgba(255,214,0,0.07);padding:2rem 1.5rem;min-width:180px;">
+          <h3 style="color:#ffd600;">Fiction</h3>
+          <p style="color:#444;">Imaginative stories and creative worlds.</p>
+        </div>
+        <div style="background:#fffde7;border-radius:16px;box-shadow:0 2px 8px rgba(255,214,0,0.07);padding:2rem 1.5rem;min-width:180px;">
+          <h3 style="color:#ffd600;">Non-Fiction</h3>
+          <p style="color:#444;">True stories, biographies, and real-world insights.</p>
+        </div>
+        <div style="background:#fffde7;border-radius:16px;box-shadow:0 2px 8px rgba(255,214,0,0.07);padding:2rem 1.5rem;min-width:180px;">
+          <h3 style="color:#ffd600;">Romance</h3>
+          <p style="color:#444;">Heartwarming love stories and relationships.</p>
+        </div>
+        <div style="background:#fffde7;border-radius:16px;box-shadow:0 2px 8px rgba(255,214,0,0.07);padding:2rem 1.5rem;min-width:180px;">
+          <h3 style="color:#ffd600;">Mystery & Thriller</h3>
+          <p style="color:#444;">Suspenseful tales and gripping plots.</p>
+        </div>
+        <div style="background:#fffde7;border-radius:16px;box-shadow:0 2px 8px rgba(255,214,0,0.07);padding:2rem 1.5rem;min-width:180px;">
+          <h3 style="color:#ffd600;">Fantasy</h3>
+          <p style="color:#444;">Magical worlds and epic adventures.</p>
+        </div>
+        <div style="background:#fffde7;border-radius:16px;box-shadow:0 2px 8px rgba(255,214,0,0.07);padding:2rem 1.5rem;min-width:180px;">
+          <h3 style="color:#ffd600;">Classics</h3>
+          <p style="color:#444;">Timeless stories and literary masterpieces.</p>
+        </div>
+        <div style="background:#fffde7;border-radius:16px;box-shadow:0 2px 8px rgba(255,214,0,0.07);padding:2rem 1.5rem;min-width:180px;">
+          <h3 style="color:#ffd600;">Self-Help</h3>
+          <p style="color:#444;">Books for personal growth and success.</p>
+        </div>
+        <div style="background:#fffde7;border-radius:16px;box-shadow:0 2px 8px rgba(255,214,0,0.07);padding:2rem 1.5rem;min-width:180px;">
+          <h3 style="color:#ffd600;">Young Adult</h3>
+          <p style="color:#444;">Stories for teens and young readers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="aboutus" class="page-section" style="display:none;">
+      <h2 style="color:#ffd600;">About Us</h2>
+      <p style="max-width:700px;margin:1rem auto;color:#444;">
+        <strong>Storythm</strong> is your destination for handpicked novels and bestsellers. We believe every book opens a new world and every reader deserves the perfect story.<br><br>
+        Our passionate team of book lovers curates collections, highlights trending titles, and brings you exclusive offers. We partner with publishers and authors to ensure you get the best selection and latest releases.<br><br>
+        Whether you love fiction, non-fiction, romance, fantasy, or self-help, Storythm is here to help you discover, connect, and enjoy the magic of reading. Join our community and turn every page into an adventure!
+      </p>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:2rem;margin-top:2rem;">
+        <div style="background:#fffde7;border-radius:16px;box-shadow:0 2px 8px rgba(255,214,0,0.07);padding:2rem 1.5rem;min-width:220px;">
+          <h3 style="color:#ffd600;">Our Mission</h3>
+          <p style="color:#444;">To inspire and connect readers with stories that matter, and to make book discovery joyful and easy for everyone.</p>
+        </div>
+        <div style="background:#fffde7;border-radius:16px;box-shadow:0 2px 8px rgba(255,214,0,0.07);padding:2rem 1.5rem;min-width:220px;">
+          <h3 style="color:#ffd600;">Why Choose Us?</h3>
+          <p style="color:#444;">Curated selections, trending picks, exclusive offers, and a vibrant book-loving community. Your reading journey starts here!</p>
+      </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="page-section" style="display:none;">
+      <h2 style="color:#ffd600;">Contact Us</h2>
+      <p style="max-width:700px;margin:1rem auto;color:#444;">
+        We'd love to hear from you! For questions, feedback, or partnership opportunities, reach out to us at
+        <a href="mailto:hello@storythm.com" style="color:#ffd600;text-decoration:underline;">hello@storythm.com</a>
+        or use the form below.
+      </p>
+      <form style="max-width:400px;margin:2rem auto;">
+        <input type="text" placeholder="Your Name" required style="width:100%;padding:0.7em;margin-bottom:1em;border-radius:24px;border:1px solid #ffd600;">
+        <input type="email" placeholder="Your Email" required style="width:100%;padding:0.7em;margin-bottom:1em;border-radius:24px;border:1px solid #ffd600;">
+        <textarea placeholder="Your Message" required style="width:100%;padding:0.7em;margin-bottom:1em;border-radius:24px;border:1px solid #ffd600;"></textarea>
+        <button type="submit" style="background:#ffd600;color:#222;border:none;padding:0.7em 1.4em;border-radius:24px;font-weight:bold;font-family:'Montserrat',Arial,sans-serif;font-size:1rem;box-shadow:0 2px 8px rgba(255,214,0,0.07);transition:background 0.2s,transform 0.2s;">Send Message</button>
+      </form>
+      <div style="max-width:400px;margin:2rem auto;color:#444;">
+        <h3 style="color:#ffd600;">Our Address</h3>
+        <p>Storythm Bookstore<br>
+        123 Book Lane,<br>
+        Bangalore, Karnataka, 560001<br>
+        India</p>
+        <h3 style="color:#ffd600;">Phone</h3>
+        <p>+91 12345 67890</p>
+        <h3 style="color:#ffd600;">Email</h3>
+        <p><a href="mailto:hello@storythm.com" style="color:#ffd600;text-decoration:underline;">hello@storythm.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <div id="cart-toast" style="display:none;position:fixed;bottom:32px;right:32px;background:#d4af37;color:white;padding:1em 2em;border-radius:24px;box-shadow:0 2px 8px rgba(0,0,0,0.13);font-family:'Montserrat',Arial,sans-serif;font-size:1.1rem;z-index:999;">
+  Added to cart!
+</div>
+<div class="floating-cart">
+  <svg width="32" height="32" viewBox="0 0 24 24" fill="#ffd600" xmlns="http://www.w3.org/2000/svg">
+    <path d="M7 18c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm10 0c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm-12.83-2l1.54-7h13.58l1.54 7h-16.66zm16.66-9h-17.32l-1.54-7h20.4l-1.54 7z"/>
+  </svg>
+</div>
+<script>
+  document.querySelectorAll('.products button').forEach(btn => {
+    btn.addEventListener('click', function() {
+      const toast = document.getElementById('cart-toast');
+      toast.style.display = 'block';
+      setTimeout(() => toast.style.display = 'none', 1200);
+    });
+  });
+
+    // Newsletter form dynamic feedback
+    document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('newsletter-success').style.display = 'block';
+      setTimeout(() => {
+        document.getElementById('newsletter-success').style.display = 'none';
+        document.getElementById('newsletter-form').reset();
+      }, 2000);
+    });
+
+  // Utility to show only the requested section
+  function showSection(sectionId) {
+    document.querySelectorAll('.page-section').forEach(sec => sec.style.display = 'none');
+    document.getElementById(sectionId).style.display = 'block';
+    window.scrollTo({ top: document.getElementById(sectionId).offsetTop - 100, behavior: 'smooth' });
+  }
+
+  // Show all sections for Home
+  document.querySelector('a[href="index.html"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelectorAll('.page-section').forEach(sec => sec.style.display = '');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Show only Collections
+  document.querySelector('a[href="#collections"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    showSection('collections');
+  });
+
+  // Show only About Us
+  document.querySelector('a[href="#aboutus"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    showSection('aboutus');
+  });
+
+  // Show only Contact
+  document.querySelector('a[href="#contact"]').addEventListener('click', function(e) {
+    e.preventDefault();
+    showSection('contact');
+  });
+  </script>
+
+  <footer>
+    <p>&copy; 2025 Storythm. All rights reserved.</p>
+  </footer>
+</body>
+</html>
